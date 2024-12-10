@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="" class="">
+        <input type="text" id="text1">
+        <br/>
+        <span id="spanans"></span>
+        <script>
+            let text=document.querySelector("#text1");
+            let span=document.querySelector("#spanans");
+
+            text.addEventListener("keyup",() =>
+           {
+           span.innerHTML=text.value;
+           }
+        
+        )
+            
+           
+
+
+
+        </script>
+
+
+
+    </form>
+    
+</body>
+</html>

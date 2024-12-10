@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="" class="">
+        <input type="button" id="btn" value="click">
+        <br/>
+        <span1 id="spanans1"></span1>
+        <br/>
+        <span2 id="spanans2"></span2>
+        <br/>
+        <input type="text" id="txt">
+        <br/>
+        <input type="button" id="btncheck" value="check">
+        <br/>
+        <span3 id="spanans3"></span3>
+    </form>
+    <script>
+        let btn=document.querySelector("#btn");
+        let txt=document.querySelector("#txt");
+        let span1=document.querySelector("#spanans1");
+        let span2=document.querySelector("#spanans2");
+        let span3=document.querySelector("#spanans3");
+        let btncheck=document.querySelector("#btncheck");
+        let randomNumber1,randomNumber2;
+
+        btn.addEventListener("click",()=>
+    {
+        randomNumber1 =Math.floor(Math.random() * 16);
+        randomNumber2 =Math.floor(Math.random() * 16);
+        span1.innerHTML=randomNumber1;
+        span2.innerHTML=randomNumber2;
+        
+    }
+    )
+        btncheck.addEventListener("click",()=>
+        {
+            if (randomNumber1+randomNumber2== parseInt(txt.value))
+            {
+            
+                span3.innerHTML="right";
+            } 
+            else
+            {
+                span3.innerHTML="wrong";
+            }
+
+        }
+    )
+
+
+    </script>
+</body>
+</html>

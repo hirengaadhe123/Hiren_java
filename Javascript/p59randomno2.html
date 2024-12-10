@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="" class="">
+        <input type="button" id="btn" value="click">
+        <br/>
+        <span1 id="spanans1"></span1>
+        <br/>
+        <span2 id="spanans2"></span2>
+    </form>
+    <script>
+        let btn=document.querySelector("#btn");
+        let span1=document.querySelector("#spanans1");
+        let span2=document.querySelector("#spanans2");
+        
+
+        
+
+        btn.addEventListener("click",()=>
+    {
+        let randomNumber1 =Math.floor(Math.random() * 16);
+        let randomNumber2 =Math.floor(Math.random() * 16);
+        span1.innerHTML=randomNumber1;
+        span2.innerHTML=randomNumber2;
+        
+    }
+    )
+
+
+    </script>
+</body>
+</html>

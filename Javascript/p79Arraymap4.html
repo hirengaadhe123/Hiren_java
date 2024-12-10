@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="" class="">
+        <span id="spanans"></span>
+    </form>
+   
+    <script>
+       
+        let numbers=[7, 16, 2, 12, 20, 11, 5, 19, 8, 23, 15, 3, 13, 9, 18, 10, 4, 14, 6, 22, 1, 21, 17, 24, 25];
+        let span=document.querySelector("#spanans");
+        let evenNumbers=numbers.map(function(num)
+        {
+            return num %7;
+        });
+       
+       span.innerHTML=evenNumbers;
+
+
+
+
+    </script>
+</body>
+</html>

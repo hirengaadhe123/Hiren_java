@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class Student{
+            constructor(sno,sname,sfees){
+                this.sno=sno;
+                this.sname=sname;
+                this.sfees=sfees;
+            }
+            displayinfo(){
+                console.log(`${this.sno} ${this.sname} ${this.sfees}`);
+            }
+        }
+            s1=new Student('01','kunj','2000');
+            s2=new Student('02','viraj','2500');
+            s3=new Student('03','nikunj','2300');
+
+            s1.displayinfo();
+            s2.displayinfo();
+            s3.displayinfo();
+            
+
+
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="" class="">
+        <input type="button" id="btn" value="click">
+        <span id="spanans"></span>
+        <br/>
+        <input type="button" id="btnmax" value="maxno">
+        <br/>
+        <span2 id="spanans2"></span2>
+        
+    </form>
+    <script>
+        let btn=document.querySelector("#btn");
+        let btnmax=document.querySelector("#btnmax");
+        let span=document.querySelector("#spanans");
+        let span2=document.querySelector("#spanans2");
+        let max=0;
+
+        btn.addEventListener("click",()=>
+    {
+        let randomNumber =Math.floor(Math.random() * 50);
+        if (randomNumber>max)
+        {
+            max=randomNumber;
+        }
+        span.innerHTML=randomNumber;
+    }
+    )
+        btnmax.addEventListener("click",()=>
+    {
+         span2.innerHTML=max;
+    }
+)
+
+
+    </script>
+</body>
+</html>

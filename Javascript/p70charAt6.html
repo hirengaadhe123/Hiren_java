@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="" class="">
+    <input type="text1" id="text1">
+    <br/>
+    <input type="button" id="btnshow" value="show">
+    <br/>
+    <span id="spanans"></span>
+    <br/>
+    <span2 id="spanans2"></span2>
+  </form>
+
+    <script>
+        let text1=document.querySelector("#text1");
+        let btnshow=document.querySelector("#btnshow");
+        let span=document.querySelector("#spanans");
+        let span2=document.querySelector("#spanans2");
+        let c1=0;
+        let c2=0;
+        
+
+    btnshow.addEventListener("click",()=>
+    {
+        let text=text1.value;
+        span.innerHTML = '';
+        c1=0;
+        c2=0;
+	   for(i=0;i<text.length;i++)
+	  {
+        let letter=text.charAt(i);
+      if(letter=="@")
+      {
+        c1++;
+      }
+      if(letter==".")
+      {
+        c2++;
+      }
+
+      if(c1==1 && (c2==1 || c2==2))
+      {
+       span2.innerHTML="Valid Email";
+      }
+      else
+      {
+      span2.innerHTML="invalid email"; 
+      }
+	  }
+    }
+    )
+    </script>
+</body>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="" class="">
+        <input type="button" id="btn" value="click">
+        <br/>
+        <span1 id="spanans1"></span1>
+        <br/>
+        <span2 id="spanans2"></span2>
+        <br/>
+        <input type="text" id="txt">
+        <br/>
+        <input type="button" id="btncheck" value="check">
+        <br/>
+        <span3 id="spanans3"></span3>
+        <span4 id="spanans4"></span4>
+        <br/>
+        <span5 id="spanans5"></span5>
+        <span6 id="spanans6"></span6>
+    </form>
+    <script>
+        rans=0;
+        wans=0;
+        let btn=document.querySelector("#btn");
+        let txt=document.querySelector("#txt");
+        let span1=document.querySelector("#spanans1");
+        let span2=document.querySelector("#spanans2");
+        let span3=document.querySelector("#spanans3");
+        let span4=document.querySelector("#spanans4");
+        let span5=document.querySelector("#spanans5");
+        let span6=document.querySelector("#spanans6");
+        let btncheck=document.querySelector("#btncheck");
+        let randomNumber1,randomNumber2;
+
+        btn.addEventListener("click",()=>
+    {
+        randomNumber1 =Math.floor(Math.random() * 16);
+        randomNumber2 =Math.floor(Math.random() * 16);
+        span1.innerHTML=randomNumber1;
+        span2.innerHTML=randomNumber2;
+        
+    }
+    )
+        btncheck.addEventListener("click",()=>
+        {
+            if (randomNumber1+randomNumber2== parseInt(txt.value))
+            {
+                span3.innerHTML="right";
+                rans+=1;
+            } 
+            else
+            {
+                span4.innerHTML="wrong";
+                wans+=1;
+            }
+            span5.innerHTML=rans;
+            span6.innerHTML=wans;
+        }
+    )
+
+
+    </script>
+</body>
+</html>

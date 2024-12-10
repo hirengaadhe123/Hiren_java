@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="" class="">
+    <input type="text1" id="text1">
+    <br/>
+    <input type="button" id="btnshow" value="show">
+    <br/>
+    <span id="spanans"></span>
+    <br/>
+    <span2 id="spanans2"></span2>
+    <br/>
+    <span3 id="spanans3"></span3>
+</form>
+    <script>
+        let text1=document.querySelector("#text1");
+        let btnshow=document.querySelector("#btnshow");
+        let span=document.querySelector("#spanans");
+        let span2=document.querySelector("#spanans2");
+        let span3=document.querySelector("#spanans3");
+
+        btnshow.addEventListener("click",()=>
+    {
+        let text=text1.value;
+
+        let letter=text.charAt(0);
+        span.innerHTML=letter;
+
+        let letter1=text.charAt(1);
+        span2.innerHTML=letter1;
+
+        let letter2=text.charAt(2);
+        span3.innerHTML=letter2;
+    }
+    
+    )
+    </script>
+</body>
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Details</title>
+</head>
+<body>
+    <form action="" class="">
+        <span id="spanans">
+            <table border="2">
+                <thead>
+                    <tr>
+                        <th>Student Name</th>
+                        <th>Roll No</th>
+                        <th>Percentage</th>
+                    </tr>
+                </thead>
+                <tbody id="student-list">
+                    <!-- Student rows will be injected here -->
+                </tbody>
+            </table>
+        </span>
+        <span2 id="spanans2">
+            <table border="2">
+                <thead>
+                    <tr>
+                        <th>Student Name</th>
+                        <th>Roll No</th>
+                        <th>Percentage</th>
+                    </tr>
+                </thead>
+                <tbody id="student-grade">
+                    <!-- Student rows will be injected here -->
+                </tbody>
+            </table>
+        </span2>
+    </form>
+   
+    <script>
+        // Step 1: Create an array of employee objects
+        let students = [
+            { rollno: 1, name: "John Doe", percentage: 85.5 },
+            { rollno: 2, name: "Jane Smith", percentage: 92.0 },
+            { rollno: 3, name: "Sam Brown", percentage: 76.4 },
+            { rollno: 4, name: "Lisa White", percentage: 88.3 },
+            { rollno: 5, name: "Tom Green", percentage: 79.5 },
+            { rollno: 6, name: "Emily Davis", percentage: 91.2 },
+            { rollno: 7, name: "Michael Johnson", percentage: 67.8 },
+            { rollno: 8, name: "Sophie Turner", percentage: 84.9 },
+            { rollno: 9, name: "David Miller", percentage: 55.0 },
+            { rollno: 10, name: "Olivia Clark", percentage: 42.5 },
+            { rollno: 11, name: "James Wilson", percentage: 77.4 },
+            { rollno: 12, name: "Emma Lewis", percentage: 80.6 },
+            { rollno: 13, name: "Daniel Walker", percentage: 82.1 },
+            { rollno: 14, name: "Sophia Lee", percentage: 70.9 },
+            { rollno: 15, name: "Luke Harris", percentage: 59.3 },
+            { rollno: 16, name: "Charlotte Young", percentage: 90.7 },
+            { rollno: 17, name: "Liam Allen", percentage: 46.3 },
+            { rollno: 18, name: "Ava Scott", percentage: 75.2 },
+            { rollno: 19, name: "Jacob King", percentage: 59.0 },
+            { rollno: 20, name: "Mia Adams", percentage: 91.8 }
+        ];
+
+        // Step 2: Get the span element where the result will be displayed
+        let span = document.querySelector("#spanans");
+        let span2=document.querySelector("#spanans2");
+        let studentlist = document.querySelector("#student-list");
+        let studentgrade=document.querySelector("#student-grade");
+
+        // Step 3: Use map to create a new array of strings displaying employee details
+        let StudentRows = students.map(function(s1) {
+            return `<tr><td>${s1.rollno}</td><td>${s1.name}</td><td>${s1.percentage}</td></tr>`;
+        });
+        let StudentRows2 = students.map(function(s2) {
+            if (s2.percentage<60) 
+            {
+                return `<tr><td>${s2.rollno}</td><td>${s2.name}</td><td>${s2.percentage}</td></tr>`;
+            }
+        });
+        
+
+        // Step 4: Join the array into a single string with line breaks and display it
+        studentlist.innerHTML = StudentRows.join('');
+        studentgrade.innerHTML=StudentRows2.join('');
+    </script>
+</body>
+</html>

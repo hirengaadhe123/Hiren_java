@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Details</title>
+</head>
+<body>
+    <form action="" class="">
+        <span id="spanans">
+            <table border="2">
+                <thead>
+                    <tr>
+                        <th>Student Name</th>
+                        <th>Roll No</th>
+                        <th>English Marks</th>
+                        <th>Hindi Marks</th>
+                        <th>Total Marks</th>
+                    </tr>
+                </thead>
+                <tbody id="student-list">
+                    <!-- Student rows will be injected here -->
+                </tbody>
+            </table>
+        </span>
+        <span2 id="spanans2">
+            <table border="2">
+                <thead>
+                    <tr>
+                        <th>Student Name</th>
+                        <th>Roll No</th>
+                        <th>English Marks</th>
+                        <th>Hindi Marks</th>
+                        <th>Total Marks</th>
+                    </tr>
+                </thead>
+                <tbody id="student-list2">
+                    <!-- Student rows will be injected here -->
+                </tbody>
+            </table>
+        </span2>
+        <span3 id="spanans3">
+            <table border="2">
+                <thead>
+                    <tr>
+                        <th>Student Name</th>
+                        <th>Roll No</th>
+                        <th>English Marks</th>
+                        <th>Hindi Marks</th>
+                        <th>Total Marks</th>
+                    </tr>
+                </thead>
+                <tbody id="student-list3">
+                    <!-- Student rows will be injected here -->
+                </tbody>
+            </table>
+        </span3>
+        <span4 id="spanans4">
+            <table border="2">
+                <thead>
+                    <tr>
+                        <th>Student Name</th>
+                        <th>Roll No</th>
+                        <th>English Marks</th>
+                        <th>Hindi Marks</th>
+                        <th>Total Marks</th>
+                    </tr>
+                </thead>
+                <tbody id="student-list4">
+                    <!-- Student rows will be injected here -->
+                </tbody>
+            </table>
+        </span>
+        <span5 id="spanans5">
+            <table border="2">
+                <thead>
+                    <tr>
+                        <th>Student Name</th>
+                        <th>Roll No</th>
+                        <th>English Marks</th>
+                        <th>Hindi Marks</th>
+                        <th>Total Marks</th>
+                    </tr>
+                </thead>
+                <tbody id="student-list5">
+                    <!-- Student rows will be injected here -->
+                </tbody>
+            </table>
+        </span5>
+        <span6 id="spanans6">
+            <table border="2">
+                <thead>
+                    <tr>
+                        <th>Student Name</th>
+                        <th>Roll No</th>
+                        <th>English Marks</th>
+                        <th>Hindi Marks</th>
+                        <th>Total Marks</th>
+                    </tr>
+                </thead>
+                <tbody id="student-list6">
+                    <!-- Student rows will be injected here -->
+                </tbody>
+            </table>
+        </span6>
+    </form>
+   
+    <script>
+        // Step 1: Create an array of employee objects
+        let students = [
+    {rollno: 101,  name: "Arjun Sharma", englishmarks: 25, hindimarks: 18, totalmarks: 43},
+    {rollno: 102,  name: "Priya Verma", englishmarks: 30, hindimarks: 14, totalmarks: 44},
+    {rollno: 103,  name: "Ravi Kumar", englishmarks: 18, hindimarks: 23, totalmarks: 41},
+    {rollno: 104,  name: "Sneha Reddy", englishmarks: 22, hindimarks: 15, totalmarks: 37},
+    {rollno: 105,  name: "Aarav Mehta", englishmarks: 26, hindimarks: 19, totalmarks: 45},
+    {rollno: 106,  name: "Neha Patel", englishmarks: 17, hindimarks: 30, totalmarks: 47},
+    {rollno: 107,  name: "Ankit Yadav", englishmarks: 28, hindimarks: 12, totalmarks: 40},
+    {rollno: 108,  name: "Komal Singh", englishmarks: 25, hindimarks: 22, totalmarks: 47},
+    {rollno: 109,  name: "Sameer Khan", englishmarks: 15, hindimarks: 27, totalmarks: 42},
+    {rollno: 110,  name: "Tanvi Gupta", englishmarks: 30, hindimarks: 10, totalmarks: 40},
+    {rollno: 111,  name: "Meera Joshi", englishmarks: 24, hindimarks: 17, totalmarks: 41},
+    {rollno: 112,  name: "Deepak Sharma", englishmarks: 19,hindimarks: 21, totalmarks: 40},
+    {rollno: 113,  name: "Sonal Rani", englishmarks: 21, hindimarks: 19, totalmarks: 40},
+    {rollno: 114,  name: "Raghav Patel", englishmarks: 18, hindimarks: 16, totalmarks: 34},
+    {rollno: 115,  name: "Shruti Mehta", englishmarks: 22, hindimarks: 20,totalmarks: 42},
+    {rollno: 116,  name: "Vijay Kumar", englishmarks: 19, hindimarks: 18, totalmarks: 37},
+    {rollno: 117,  name: "Ayesha Khan", englishmarks: 23, hindimarks: 19, totalmarks: 42},
+    {rollno: 118,  name: "Karan Gupta", englishmarks: 20, hindimarks: 22, totalmarks: 42},
+    {rollno: 119,  name: "Tanya Verma", englishmarks: 17, hindimarks: 23, totalmarks: 40},
+    {rollno: 120,  name: "Mohit Yadav", englishmarks: 30, hindimarks: 18, totalmarks: 48},
+];
+
+        let span = document.querySelector("#spanans");
+        let span2=document.querySelector("#spanans2");
+        let span3=document.querySelector("#spanans3");
+        let span4=document.querySelector("#spanans4");
+        let span5=document.querySelector("#spanans5");
+        let span6=document.querySelector("#spanans6");
+        let studentlist = document.querySelector("#student-list");
+        let studentlist2 = document.querySelector("#student-list2");
+        let studentlist3 = document.querySelector("#student-list3");
+        let studentlist4 = document.querySelector("#student-list4");
+        let studentlist5 = document.querySelector("#student-list5");
+        let studentlist6 = document.querySelector("#student-list6");
+        let startLetter = 'A';
+
+        let StudentRows = students.filter(function(s1) 
+        {
+            return s1; // Simply return the student
+        }).map(function(s1) 
+        {
+            return `<tr><td>${s1.rollno}</td><td>${s1.name}</td><td>${s1.englishmarks}</td><td>${s1.hindimarks}</td><td>${s1.totalmarks}</td></tr>`;
+        });
+
+        // Filter students with rollno > 105
+        let StudentRows2 = students.filter(function(s2) 
+        {
+            return s2.rollno > 105;
+        }).map(function(s2) 
+        {
+            return `<tr><td>${s2.rollno}</td><td>${s2.name}</td><td>${s2.englishmarks}</td><td>${s2.hindimarks}</td><td>${s2.totalmarks}</td></tr>`;
+        });
+
+        // Filter students whose names start with 'A'
+        let StudentRows3 = students.filter(function(s3)
+        {
+            return s3.name.startsWith('A');
+        }).map(function(s3) 
+        {
+            return `<tr><td>${s3.rollno}</td><td>${s3.name}</td><td>${s3.englishmarks}</td><td>${s3.hindimarks}</td><td>${s3.totalmarks}</td></tr>`;
+        });
+
+        // Filter students with englishmarks > 20
+        let StudentRows4 = students.filter(function(s4) 
+        {
+            return s4.englishmarks > 20;
+        }).map(function(s4) 
+        {
+            return `<tr><td>${s4.rollno}</td><td>${s4.name}</td><td>${s4.englishmarks}</td><td>${s4.hindimarks}</td><td>${s4.totalmarks}</td></tr>`;
+        });
+
+        // Filter students with hindimarks < 19
+        let StudentRows5 = students.filter(function(s5) 
+        {
+            return s5.hindimarks < 19;
+        }).map(function(s5) 
+        {
+            return `<tr><td>${s5.rollno}</td><td>${s5.name}</td><td>${s5.englishmarks}</td><td>${s5.hindimarks}</td><td>${s5.totalmarks}</td></tr>`;
+        });
+
+        // Filter students with totalmarks > 40
+        let StudentRows6 = students.filter(function(s6) 
+        {
+            return s6.totalmarks > 40;
+        }).map(function(s6) 
+        {
+            return `<tr><td>${s6.rollno}</td><td>${s6.name}</td><td>${s6.englishmarks}</td><td>${s6.hindimarks}</td><td>${s6.totalmarks}</td></tr>`;
+        });
+        
+
+        studentlist.innerHTML =StudentRows.join('');
+        studentlist2.innerHTML=StudentRows2.join('');
+        studentlist3.innerHTML=StudentRows3.join('');
+        studentlist4.innerHTML=StudentRows4.join('');
+        studentlist5.innerHTML=StudentRows5.join('');
+        studentlist6.innerHTML=StudentRows6.join('');
+    </script>
+</body>
+</html>

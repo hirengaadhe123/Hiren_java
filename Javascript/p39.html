@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="" class="">
+       no <input type="text" id="txtno">
+       <br/>
+          <input type="radio" id="btnsquare" value="Square" name="g2"> Square
+          <input type="radio" id="btncube" value="Cube" name="g2"> Cube
+          <br/>
+          <span id="spanans"></span>
+          
+
+    </form>
+    <script>
+        let no=document.querySelector("#txtno");
+        let btnsquare=document.querySelector("#btnsquare");
+        let btncube=document.querySelector("#btncube");
+        let span = document.querySelector("#spanans");
+       
+
+        btnsquare.addEventListener("click",()=>
+        {
+            let no=parseFloat(txtno.value);
+            span.innerHTML=no*no;
+        }
+    )
+         btncube.addEventListener("click",()=>
+        {
+            let no=parseFloat(txtno.value);
+            span.innerHTML=no*no*no;
+        }
+    )
+    
+
+
+    </script>
+    
+</body>
+</html>

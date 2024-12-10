@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Details</title>
+</head>
+<body>
+    <form action="" class="">
+        <span id="spanans">
+            <table border="2">
+                <thead>
+                    <tr>
+                        <th>Employee Number</th>
+                        <th>Name</th>
+                        <th>Salary</th>
+                    </tr>
+                </thead>
+                <tbody id="employee-list">
+                    <!-- Employee rows will be injected here -->
+                </tbody>
+            </table>
+        </span>
+    </form>
+   
+    <script>
+        // Step 1: Create an array of employee objects
+        let emp = [
+            { eno: 101, ename: "John Doe", salary: 50000 },
+            { eno: 102, ename: "Jane Smith", salary: 60000 },
+            { eno: 103, ename: "Sam Brown", salary: 55000 },
+            { eno: 104, ename: "Lisa White", salary: 70000 },
+            { eno: 105, ename: "Tom Green", salary: 45000 },
+            { eno: 106, ename: "Emily Davis", salary: 53000 },
+            { eno: 107, ename: "Michael Johnson", salary: 62000 },
+            { eno: 108, ename: "Sophie Turner", salary: 48000 },
+            { eno: 109, ename: "David Miller", salary: 67000 },
+            { eno: 110, ename: "Olivia Clark", salary: 75000 },
+            { eno: 111, ename: "James Wilson", salary: 54000 },
+            { eno: 112, ename: "Emma Lewis", salary: 49000 },
+            { eno: 113, ename: "Daniel Walker", salary: 55000 },
+            { eno: 114, ename: "Sophia Lee", salary: 58000 },
+            { eno: 115, ename: "Luke Harris", salary: 50000 },
+            { eno: 116, ename: "Charlotte Young", salary: 66000 },
+            { eno: 117, ename: "Liam Allen", salary: 53000 },
+            { eno: 118, ename: "Ava Scott", salary: 49000 },
+            { eno: 119, ename: "Jacob King", salary: 62000 },
+            { eno: 120, ename: "Mia Adams", salary: 71000 }
+        ];
+
+        // Step 2: Get the span element where the result will be displayed
+        let span = document.querySelector("#spanans");
+        let employeeList = document.querySelector("#employee-list");
+
+        // Step 3: Use map to create a new array of strings displaying employee details
+        let employeesRows = emp.map(function(e1) {
+            return `<tr><td>${e1.eno}</td><td>${e1.ename}</td><td>${e1.salary}</td></tr>`;
+        });
+
+        // Step 4: Join the array into a single string with line breaks and display it
+        employeeList.innerHTML = employeesRows.join('');
+    </script>
+</body>
+</html>

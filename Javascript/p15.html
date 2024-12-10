@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <form>
+        No <input type="text" id="txtno"/>
+        <br/>
+        <input type="button" id="btnsquare" value="Square" onclick="hisq();"/>
+        <br/> 
+        Ans <input type="text" id="txtans"/>
+    </form>
+
+</body>
+<script>
+
+    function hisq()
+    {
+        let a=document.getElementById("txtno").value;
+        document.getElementById("txtans").value=a*a;
+    }
+    
+</script>
+
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="" class="">
+        <input type="checkbox" id="checkbox1" value="cricket">cricket
+        <input type="checkbox" id="checkbox2" value="football">football
+        <input type="checkbox" id="checkbox3" value="hockey">hockey
+        <input type="checkbox" id="checkbox4" value="chess">chess
+        <br/>
+        <input type="button" id="btncheck" value="check">
+        <span id="spanans"></span>
+
+    </form>
+    <script>
+
+        let checkbox1=document.querySelector("#checkbox1");
+        let checkbox2=document.querySelector("#checkbox2");
+        let checkbox3=document.querySelector("#checkbox3");
+        let checkbox4=document.querySelector("#checkbox4");
+        let btncheck=document.querySelector("#btncheck")
+        let span=document.querySelector("#spanans");
+
+        btncheck.addEventListener("click",()=>
+        {
+            if (checkbox1.checked)
+            {
+             span.innerHTML="cricket";   
+            }
+           if (checkbox2.checked)
+            {
+             span.innerHTML="football";   
+            }
+            if (checkbox3.checked)
+            {
+             span.innerHTML="hockey";   
+            }
+            if(checkbox4.checked)
+            {
+             span.innerHTML="chess";   
+            }
+           
+
+        }
+    
+    )
+
+
+
+    </script>
+    
+</body>
+</html>

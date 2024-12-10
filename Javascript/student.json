@@ -1,0 +1,40 @@
+
+     [
+      {
+        "rollno": 101,
+        "name": "John Doe",
+        "std": "10",
+        "fees": 1500,
+        "gender": "Male"
+      },
+      {
+        "rollno": 102,
+        "name": "Jane Smith",
+        "std": "11",
+        "fees": 1700,
+        "gender": "Female"
+      },
+      {
+        "rollno": 103,
+        "name": "Mark Johnson",
+        "std": "12",
+        "fees": 1800,
+        "gender": "Male"
+      },
+      {
+        "rollno": 104,
+        "name": "Emily Davis",
+        "std": "10",
+        "fees": 1500,
+        "gender": "Female"
+      },
+      {
+        "rollno": 105,
+        "name": "Michael Brown",
+        "std": "11",
+        "fees": 1600,
+        "gender": "Male"
+      }
+    ]
+  
+  

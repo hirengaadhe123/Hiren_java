@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="" class="">
+       name <input type="text" id="txtname" >
+       <span1 id="spanans1"></span1>
+       <br/>
+       age<input type="text" id="txtage" >
+        <span2 id="spanans2"></span2>
+        <br/>
+       password<input type="password" id="password1">
+       <span3 id="spanans3"></span3>
+       <br/>
+       retypepassword<input type="password" id="password2">
+       <span4 id="spanans4"></span4>
+       <span5 id="spanans5"></span5>
+       <br/>
+       address<input type="text" id="txtaddress">
+       <span6 id="spanans6"></span6>
+       <span7 id="spanans7"></span7>
+       <br/>
+      city <select id="cmdcity" >
+        <option value="select">select</option>
+        <option value="ahemdabad">ahemdabad</option>
+        <option value="anand">anand</option>
+        <option value="baroda">baroda</option>
+        <option value="rajkot">rajkot</option>
+       </select>
+       <span8 id="spanans8"></span8>
+        <br/>
+        <input type="button" id="btnclick" value="click">
+
+        
+       
+    </form>
+    <script>
+        let txtname=document.querySelector("#txtname");
+        let txtage=document.querySelector("#txtage");
+        let password1=document.querySelector("#password1");
+        let password2=document.querySelector("#password2");
+        let txtaddress=document.querySelector("#txtaddress");
+        let cmdcity=document.querySelector("#cmdcity");
+        let btnclick=document.querySelector("#btnclick");
+        let span1=document.querySelector("#spanans1");
+        let span2=document.querySelector("#spanans2");
+        let span3=document.querySelector("#spanans3");
+        let span4=document.querySelector("#spanans4");
+        let span5=document.querySelector("#spanans5");
+        let span6=document.querySelector("#spanans6");
+        let span7=document.querySelector("#spanans7");
+        let span8=document.querySelector("#spanans8");
+
+        btnclick.addEventListener("click",()=>
+        {
+
+           if (txtname.value=="")
+            {
+                span1.innerHTML="*";
+                span1.style.color = "red";
+            }
+            else
+            {
+                span1.innerHTML="";
+            }
+            
+            if (txtage.value=="")
+            {
+                span2.innerHTML="*";
+                span2.style.color = "red"; 
+            }
+            else
+            {
+                span2.innerHTML="";
+            }
+            if (password1.value=="")
+            {
+                span3.innerHTML="*";
+                span3.style.color = "red"; 
+            }
+            else
+            {
+                span3.innerHTML="";
+            }
+            if (password2.value=="")
+            {
+                span4.innerHTML="*";
+                span4.style.color = "red"; 
+            }
+            else
+            {
+                span4.innerHTML="";
+            }
+            if (password1.value==password2.value)
+            {
+                span5.innerHTML="";
+                 
+            }
+            else
+            {
+                span5.innerHTML="password not match";
+                span5.style.color = "red";
+            }
+            if (txtaddress.value=="")
+            {
+                span6.innerHTML="*";
+                span6.style.color = "red"; 
+            }
+            else
+            {
+                span6.innerHTML="";
+            }
+            if (txtaddress.value.length>3)
+            {
+                span7.innerHTML="please enter right address";
+                span7.style.color = "red"; 
+            }
+            else
+            {
+                span7.innerHTML="";
+            }
+            if (cmdcity.value=="select")
+            {
+                span8.innerHTML="*";
+                span8.style.color = "red"; 
+            }
+            else
+            {
+                span8.innerHTML="";
+            }
+        }
+        
+    )
+    </script>
+    
+</body>
+</html>

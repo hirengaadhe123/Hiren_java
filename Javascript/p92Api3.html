@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Submission with Fetch</title>
+</head>
+<body>
+    <script>
+        fetch("product.json")
+        .then(response=>response.json())
+        .then(data=>{
+        for(var x in data)
+    {
+    let a=(`${data[x].albumid} - ${data[x].id} - ${data[x].title} -  <img src='${data[x].url}' width="100" height="100">' <br>`);
+    document.write(a);
+    }
+    })
+    .catch((error) => console.log(error));
+        </script>
+</body>
+</html>

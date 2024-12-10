@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+        border: 1px solid black;
+        height: 400px;
+        width: 600px;
+        text-align: center;
+        background-color: lightblue;
+        margin: 500px;
+        border-radius: 10px;
+        margin-top: 200px;
+        justify-items: auto;
+
+
+
+    }
+
+    .container1 {
+        margin-top: 20px;
+        height: 30px;
+    }
+    </style>
+</head>
+<body>
+    <form action="" class="container">
+    eng <input type="text" placeholder="Enter Marks "  id="txteng">
+    <br/>
+    hind <input type="text" placeholder="Enter Marks "  id="txthind">
+    <br/>
+    math <input type="text" placeholder="Enter Marks "  id="txtmath">
+    <br/>
+    ss <input type="text" placeholder="Enter Marks " id="txtss">
+    <br/>
+    guj <input type="text" placeholder="Enter Marks" id="txtguj">
+    <br/>
+    <input type="button" id="btnresult" value="Result">
+    
+    <br/>
+    <span id="spanans"></span>
+    </form>
+    <script>
+        let txteng=document.querySelector("#txteng");
+        let txthind=document.querySelector("#txthind");
+        let txtmath=document.querySelector("#txtmath");
+        let txtss=document.querySelector("#txtss");
+        let txtguj=document.querySelector("#txtguj");
+        let span = document.querySelector("#spanans");
+        let Area=document.querySelector("#sum");
+        
+
+        btnresult.addEventListener("click",()=>{
+            let eng=parseInt(txteng.value);
+            let hind=parseInt(txthind.value);
+            let math=parseInt(txtmath.value);
+            let ss=parseInt(txtss.value);
+            let guj=parseInt(txtguj.value);
+            let total=eng+hind+math+ss+guj;
+            span.innerHTML=total;   
+            
+            if (total < 50) 
+            {
+                 span.innerHTML="fail";
+            } 
+            else
+            {
+                span.innerHTML="pass";
+            }
+        }
+     )
+    </script>
+</body>
+</html>

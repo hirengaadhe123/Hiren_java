@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="" class="">
+        <select id="cmdcity">
+        <option value="ahemdabad">ahemdabad</option>
+        <option value="anand">anand</option>
+        <option value="baroda">baroda</option>
+        <option value="rajkot">rajkot</option>
+        <br/>
+        <input type="button" id="btnshow" value="show">
+        <span id="spanans"></span>
+    
+
+        </select>
+    </form>
+    <script>
+        let btnshow=document.querySelector("#btnshow");
+        let span=document.querySelector("#spanans");
+        let cmdcity=document.querySelector("#cmdcity");
+        
+        btnshow.addEventListener("click",()=>
+    {
+        if (cmdcity.value=="ahemdabad")
+        {
+            span.innerHTML="ahemdabad";
+        } 
+        else if (cmdcity.value=="anand")
+        {
+            span.innerHTML="anand";
+        }
+        else if (cmdcity.value=="baroda")
+        {
+            span.innerHTML="baroda";
+        }
+        else 
+        {
+            span.innerHTML="rajkot";
+        }
+       
+    }
+    )
+
+    </script>
+    
+</body>
+</html>

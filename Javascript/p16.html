@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        eng <input type="text" id="txteng"/>
+    <br/>
+        guj <input type="text" id="txtguj"/>
+    </br>
+        maths <input type="text" id="txtmaths"/>
+    </br>
+        <input type="button" id="btntotal" value="Total" onclick="hitotal();"/>
+    </br>
+       Total <input type="text" id="txttotal"/>
+    <br/>
+        <input type="button" id="btnavg" value="Avg" onclick="hiavg();"/>
+    </br>
+       Avg <input type="text" id="txtavg"/>
+       
+
+
+    </form>
+</body>
+<script>
+    function hitotal()
+    {
+        let a=parseInt(document.getElementById("txteng").value);
+        let b=parseInt(document.getElementById("txtguj").value);
+        let c=parseInt(document.getElementById("txtmaths").value);
+        document.getElementById("txttotal").value=a+b+c; 
+    }
+    function hiavg()
+    {
+        let a=parseInt(document.getElementById("txteng").value);
+        let b=parseInt(document.getElementById("txtguj").value);
+        let c=parseInt(document.getElementById("txtmaths").value);
+        document.getElementById("txtavg").value=a+b+c/3;
+
+    }
+
+</script>
+</html>

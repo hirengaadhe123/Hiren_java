@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        No 1 <input type="text" id="txtno1"/>
+    </br>
+        No 2 <input type="text" id="txtno2"/>
+    </br>
+        <input type="button" id="btnplus" value="Plus" onclick="hiplus();"/>
+    
+        <input type="button" id="btnminus" value="Minus" onclick="himinus();"/>
+    
+        <input type="button" id="btnmultiply" value="Multiply" onclick="himultiply();"/>
+    
+        <input type="button" id="btndivide" value="Divide" onclick="hidivide();"/>
+    
+        Ans<input type="text" id="txtans"/>
+
+    </form>
+</body>
+    <script>
+        function hiplus()
+        {
+            let a=parseInt(document.getElementById("txtno1").value);
+            let b=parseInt(document.getElementById("txtno2").value);
+            document.getElementById("txtans").value=a+b;
+        }
+        function himinus()
+        {
+            let a=parseInt(document.getElementById("txtno1").value);
+            let b=parseInt(document.getElementById("txtno2").value);
+            document.getElementById("txtans").value=a-b;
+        }
+        function himultiply()
+        {
+            let a=parseInt(document.getElementById("txtno1").value);
+            let b=parseInt(document.getElementById("txtno2").value);
+            document.getElementById("txtans").value=a*b;
+        }
+        function hidivide()
+        {
+            let a=parseInt(document.getElementById("txtno1").value);
+            let b=parseInt(document.getElementById("txtno2").value);
+            document.getElementById("txtans").value=a/b;
+        }
+
+
+
+    </script>
+</html>

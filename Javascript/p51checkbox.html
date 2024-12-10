@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="" class="">
+    no1 <input type="text" id="txtno1" value="">
+    <br/>
+    no2 <input type="text" id="txtno2" value="">
+    <br/>
+    <select id="cmdcalculator">
+    <option value="plus">plus</option>
+    <option value="minus">minus</option>
+    <option value="multiply">multiply</option>
+    <option value="divide">divide</option>
+    </select>
+    <br/>
+    <span id="spanans"></span>
+    </form>
+    <script>
+        let txtno1=document.querySelector("#txtno1");
+        let txtno2=document.querySelector("#txtno2");
+        let cmdcalculator=document.querySelector("#cmdcalculator");
+        let span=document.querySelector("#spanans");
+        
+        cmdcalculator.addEventListener("change",()=>
+          {
+            
+            let no1=parseFloat(txtno1.value);
+            let no2=parseFloat(txtno2.value);
+           
+            if (cmdcalculator.value=="plus") 
+            {
+                span.innerHTML=no1+no2;
+            } 
+            else if(cmdcalculator.value=="minus")
+            {
+                span.innerHTML=no1-no2;
+            }
+            else if(cmdcalculator.value=="multiply")
+            {
+                span.innerHTML=no1*no2;
+            }
+            else if(cmdcalculator.value=="divide")
+            {
+                span.innerHTML=no1/no2;
+            }
+       
+        }
+    )
+    </script>    
+</body>
+</html>

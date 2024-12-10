@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class Math{
+            constructor(a,b){
+                this.a=a;
+                this.b=b;
+            }
+            displayinfo(){
+                document.writeln(`${this.a} ${this.b}`);
+                document.writeln("<br>");
+            }
+            add(){
+                document.writeln("Add = " + (this.a+ this.b));
+                document.writeln("<br>");
+            }
+            mul(){
+                document.writeln("Mul = " + (this.a*this.b));
+                document.writeln("<br>");
+            }
+            div(){
+                document.writeln("Div = " + (this.a/ this.b));
+                document.writeln("<br>");
+            }
+            sub(){
+                document.writeln("Sub = " + (this.a- this.b));
+                document.writeln("<br>");
+            }
+        }
+        m=new Math(40,20);
+
+        m.displayinfo();
+        m.add();
+        m.mul();
+        m.div();
+        m.sub();
+
+    </script>
+    
+</body>
+</html>

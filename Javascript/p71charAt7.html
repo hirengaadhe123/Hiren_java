@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="" class="">
+    <input type="text1" id="text1">
+    <br/>
+    <input type="button" id="btnshow" value="show">
+    <br/>
+    <span id="spanans"></span>
+    <br/>
+    <span2 id="spanans2"></span2>
+    <br/>
+    <span3 id="spanans3"></span3>
+  </form>
+
+    <script>
+        let text1=document.querySelector("#text1");
+        let btnshow=document.querySelector("#btnshow");
+        let span=document.querySelector("#spanans");
+        let span2=document.querySelector("#spanans2");
+        let span3=document.querySelector("#spanans3");
+       
+        
+
+    btnshow.addEventListener("click",()=>
+    {
+        let text=text1.value;
+        span.innerHTML = '';
+        let lowercasecount=0;
+        let uppercasecount=0;
+       
+	   for(i=0;i<text.length;i++)
+	  {
+        let letter=text.charAt(i);
+        if (letter >= 'a' && letter <= 'z')
+         {
+            lowercasecount++;
+         }
+         if (letter >= 'A' && letter <= 'Z') 
+         {
+            uppercasecount++;
+         }
+           span2.innerHTML=lowercasecount;
+           span3.innerHTML=uppercasecount;
+
+	  }
+    }
+    )
+    </script>
+</body>
+</html>

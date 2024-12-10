@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class Student{
+            constructor(sno,sname,hindi,english){
+                this.sno=sno;
+                this.sname=sname;
+                this.hindi=hindi;
+                this.english=english;
+            }
+            displayinfo(){
+                document.writeln(`${this.sno} ${this.sname} ${this.hindi} ${this.english}`);
+                document.writeln("<br>");
+            }
+            add(){
+                document.writeln("Add = " + (this.hindi+ this.english));
+                document.writeln("<br>");
+            }
+        }
+        s1=new Student('1','aniket',35,37);
+        s2=new Student('2','vijay',30,46);
+        s3=new Student('3','shilesh',40,41);
+
+        s1.displayinfo();
+        s1.add();
+        s2.displayinfo();
+        s2.add();
+        s3.displayinfo();
+        s3.add();
+
+
+    </script>
+    
+</body>
+</html>

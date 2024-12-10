@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    No 1 <input type="text" id="txtno1"/>
+    <br/>
+    No 2 <input type="text" id="txtno2"/>
+    <br/>
+    No 3 <input type="text" id="txtno3"/>
+    <br/>
+    <input type="button" id="txtcheck" value="Check" onclick="hicheck();"/>
+    <br/>
+    Ans <input type="text" id="txtans"/>
+    
+</body>
+    <script>
+            function hicheck()
+            {
+            let No1=parseInt(document.getElementById("txtno1").value);
+            let No2=parseInt(document.getElementById("txtno2").value);
+            let No3=parseInt(document.getElementById("txtno3").value);
+
+            
+            
+
+            if (  No1>No2 && No1>No3)
+            {
+                document.getElementById("txtans").value="No1 is Greater";
+            }
+             else if(No2>No1 && No2>No3)
+             {
+                document.getElementById("txtans").value="No2 is Greater";  
+            }
+            else if(No3>No1 && No3>No2)
+            {
+                document.getElementById("txtans").value="No3 is Greater";
+            }
+            else
+            {
+                document.getElementById("txtans").value="All Are Equals";
+            }
+            
+
+
+            }
+
+    </script>
+</html>

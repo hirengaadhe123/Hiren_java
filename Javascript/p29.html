@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="" class="container">
+        NO <input type="text" placeholder="Enter No" id="txtno">
+        <br/>
+        <input type="button" id="btntable" value="table">
+        <br/>
+        <span id="spanans"></span>
+    
+    </form>
+    
+    <script>
+        let txtno=document.querySelector("#txtno");
+        let span=document.querySelector("#spanans");
+        let btntable=document.querySelector("#btntable");
+        
+        btntable.addEventListener("click",()=>{
+            let No=parseInt(txtno.value);
+            let str="";
+            for (let i=1;i<=10;i++)
+            {
+                str+=No +" X " + i + " = " + (No*i) + "<br>";
+            }
+            span.innerHTML=str;
+
+        }
+    )
+
+    </script>
+    
+</body>
+</html>

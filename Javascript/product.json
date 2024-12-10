@@ -1,0 +1,22 @@
+[
+    {
+    "albumid": "1",
+    "id": "101",
+    "title": "Golden Temple",
+    "url": "img/goldentmpl.jpg"
+  },
+  {
+    "albumid": "1",
+    "id": "102",
+    "title": "Taj",
+    "url": "img/taj.jpg"
+   
+  },
+  {
+    "albumid": "1",
+    "id": "103",
+    "title": "India ",
+    "url": "img/indgate.jpg"
+   
+  }
+]

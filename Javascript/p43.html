@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="" class="">
+        <input type="radio" id="radioshow" value="show" name="g4"> show
+        <input type="radio" id="radiohide" value="hide" name="g4"> hide
+        <img src="img/kutub.jpg" id="img1" height="100" width="100"/>
+        <img src="img/indgate.jpg" id="img2" height="100" width="100"/>
+        
+    </form>
+    <script>
+        let radioshow=document.querySelector("#radioshow");
+        let radiohide=document.querySelector("#radiohide");
+        let img1=document.querySelector("#img1");
+        let img2=document.querySelector("#img2");
+
+        radioshow.addEventListener("click",()=>
+        {
+            img1.style.visibility = 'visible';
+            img2.style.visibility = 'visible';
+        }
+    )
+        radiohide.addEventListener("click",()=>
+       {
+        img1.style.visibility = 'hidden';
+        img2.style.visibility = 'hidden';
+       
+       }
+    )
+     
+    </script>
+    
+</body>
+</html>

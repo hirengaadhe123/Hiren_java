@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="" class="">
+        <img src="img/taj.jpg" id="img1" height="100" width="100"/>
+        <img src="img/indgate.jpg" id="img2" height="100" width="100"/>
+        <br/>
+        <input type="button" id="btnswitch" value="switch">
+        <input type="button" id="btnreswitch" value="reswitch">
+      
+        
+    </form>
+    <script>
+        let img1=document.querySelector("#img1");
+        let img2=document.querySelector("#img2");
+        let btnswitch=document.querySelector("#btnswitch")
+
+        btnswitch.addEventListener("click",()=>
+         {
+             img1.src = "img/indgate.jpg";
+             img2.src = "img/taj.jpg";
+         }
+    )
+    btnreswitch.addEventListener("click",()=>
+         {
+             img1.src = "img/taj.jpg";
+             img2.src = "img/indgate.jpg";
+         }
+    )
+    
+      
+
+     
+    </script>
+    
+</body>
+</html>

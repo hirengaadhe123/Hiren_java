@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="" class="">
+        
+        <input type="button" id="btn" value="click">
+        <span id="spanans"></span>
+    <br/>
+    <br/>
+        <img src="" id="img" height="50" width="50">
+        
+    </form>
+    <script>
+        let btn=document.querySelector("#btn");
+        let span=document.querySelector("#spanans");
+        let img=document.querySelector("#img");
+        
+
+        btn.addEventListener("click",()=>
+    {
+        let randomNumber =Math.floor(Math.random() * 6);
+        span.innerHTML=randomNumber;
+
+        if (randomNumber == 1) 
+        {
+            img.src="img/dice1.png";
+        }
+        else if (randomNumber == 2)
+        {
+            img.src="img/dice2.png";
+        }
+        else if (randomNumber == 3)
+        {
+            img.src="img/dice3.png";
+        }
+        else if (randomNumber == 4)
+        {
+            img.src="img/dice4.png";
+        }
+        else if (randomNumber == 5)
+        {
+            img.src="img/dice5.png";
+        }
+        else if (randomNumber == 6)
+        {
+            img.src="img/dice6.png";
+        }
+    }
+    )
+        
+    </script>
+</body>
+</html>

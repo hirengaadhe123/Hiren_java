@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+        border: 1px solid black;
+        height: 400px;
+        width: 600px;
+        text-align: center;
+        background-color: lightblue;
+        margin: 500px;
+        border-radius: 10px;
+        margin-top: 200px;
+        justify-items: auto;
+
+
+
+    }
+
+    .container1 {
+        margin-top: 20px;
+        height: 30px;
+    }
+    </style>
+</head>
+<body>
+    <form action="" class="container">
+        NO1 <input type="text" placeholder="Enter No" id="txtno1">
+        <br/>
+        NO2 <input type="text" placeholder="Enter No" id="txtno2">
+        <br/>
+        <input type="button" id="btncheck" value="check">
+        <br/>
+        <span id="spanans"></span>
+
+    </form>
+    
+    <script>
+        let txtno1=document.querySelector("#txtno1");
+        let txtno2=document.querySelector("#txtno2");
+        let span = document.querySelector("#spanans");
+        let btncheck=document.querySelector("#btncheck");
+       
+        btncheck.addEventListener("click",()=>{
+
+        let No1=parseInt(txtno1.value);
+        let No2=parseInt(txtno2.value);
+        if (No2 > No1) 
+        {
+            span.innerHTML="No 2 Is Greater";
+        } 
+        else
+         {
+            span.innerHTML="No 1 Is Greater";
+    
+        }
+                
+            }
+                )
+
+       
+    </script>
+    
+</body>

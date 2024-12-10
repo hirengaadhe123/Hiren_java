@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="" class="">
+        <select id="cmdcolor">
+        <option value="red">red</option>
+        <option value="blue">blue</option>
+        <option value="black">black</option>
+        <option value="yellow">yellow</option>
+        </select>
+    </form>
+    <script>
+        let cmdcolor=document.querySelector("#cmdcolor");
+
+        cmdcolor.addEventListener("click",()=>
+    {
+         if (cmdcolor.value=="red")
+        {
+            let red=document.bgColor="red";
+        }
+        else if(cmdcolor.value=="blue")
+        {
+            let blue=document.bgColor="blue";
+        }
+        else if(cmdcolor.value=="black")
+        {
+            let black=document.bgColor="black";
+        }
+        else if(cmdcolor.value=="yellow")
+        {
+            let yellow=document.bgColor="yellow";
+        }
+    }
+    )
+        
+      
+    </script>
+    
+</body>
+</html>

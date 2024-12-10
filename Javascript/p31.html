@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="" class=""></form>
+        no <input type="text" placeholder="Enter No" id="txtno">
+        <br/>
+        <input type="button" id="btncheck" value="check">
+        <br/>
+        <span1 id="spanans1"></span1>
+        <span2 id="spanans2"></span2>
+        
+    
+    </form>
+
+    <script>
+        let txtno=document.querySelector("#txtno");
+        let span1=document.querySelector("#spanans1");
+        let span2=document.querySelector("#spanans2");
+        let btncheck=document.querySelector("#btncheck");
+        
+        btncheck.addEventListener("click",()=>{
+            
+            let no=parseInt(txtno.value);
+            let str1="";
+            let str2="";
+            for (let i=1;i<=no;i++)
+            {
+                if (i%2) 
+                {
+                    str1+= i + " is odd<br>"; 
+                } 
+                else
+                {
+                    str2+= i + "is even<br>";
+                }           
+            }
+            span1.innerHTML=str1;
+            span2.innerHTML=str2;
+     
+        }
+    )
+
+    </script>
+    
+</body>
+</html>

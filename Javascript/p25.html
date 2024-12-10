@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+        border: 1px solid black;
+        height: 400px;
+        width: 600px;
+        text-align: center;
+        background-color: lightblue;
+        margin: 500px;
+        border-radius: 10px;
+        margin-top: 200px;
+        justify-items: auto;
+
+
+
+    }
+
+    .container1 {
+        margin-top: 20px;
+        height: 30px;
+    }
+    </style>
+</head>
+<body>
+    <form action="" class="container">
+        eng<input type="text" placeholder="Enter Marks" id="txteng">
+        <br/>
+        <input type="button" id="btncheck" value="check">
+        <br/>
+        <span id="spanans"></span>
+
+    </form>
+    
+    <script>
+        let txteng=document.querySelector("#txteng");
+        let span = document.querySelector("#spanans");
+        let btncheck=document.querySelector("#btncheck");
+       
+        btncheck.addEventListener("click",()=>{
+
+        let eng=parseInt(txteng.value);
+        if (eng<18) 
+        {
+            span.innerHTML="fail";
+        } 
+        else
+         {
+            span.innerHTML="pass";
+    
+        }
+                
+            }
+                )
+
+
+
+    </script>
+    
+</body>

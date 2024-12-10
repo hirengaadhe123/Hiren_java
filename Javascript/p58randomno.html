@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="" class="">
+        <input type="button" id="btn" value="click">
+        <span id="spanans"></span>
+    </form>
+    <script>
+        let btn=document.querySelector("#btn");
+        let span=document.querySelector("#spanans");
+        
+
+        btn.addEventListener("click",()=>
+    {
+        let randomNumber =Math.floor(Math.random() * 16);
+        span.innerHTML=randomNumber;
+    }
+    )
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+        border: 1px solid black;
+        height: 400px;
+        width: 600px;
+        text-align: center;
+        background-color: lightblue;
+        margin: 500px;
+        border-radius: 10px;
+        margin-top: 200px;
+        justify-items: auto;
+
+
+
+    }
+
+    .container1 {
+        margin-top: 20px;
+        height: 30px;
+    }
+    </style>
+</head>
+<body>
+    <form action="" class="container">
+    eng <input type="text" placeholder="Enter Marks " class="container1" id="txteng">
+    <br/>
+    hind <input type="text" placeholder="Enter Marks " class="container1" id="txthind">
+    <br/>
+    math <input type="text" placeholder="Enter Marks " class="container1" id="txtmath">
+    <br/>
+    <input type="button" id="sum" value="total">
+    
+    <br/>
+    <span id="spanans"></span>
+    </form>
+    <script>
+        let eng=document.querySelector("#txteng");
+        let hind=document.querySelector("#txthind");
+        let math=document.querySelector("#txtmath");
+        let span = document.querySelector("#spanans");
+        let Area=document.querySelector("#sum");
+        
+
+        Area.addEventListener("click",()=>{
+            let a=parseFloat(txteng.value);
+            let b=parseFloat(txthind.value);
+            let c=parseFloat(txtmath.value);
+
+            span.innerHTML=a+b+c;
+            span.innerHTML=a+b+c/3;    
+            
+        }
+        
+    )
+
+
+    
+
+    </script>
+</body>
+</html>

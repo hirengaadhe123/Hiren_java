@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    eng <input type="text" id="txteng"/>
+    <br/>
+    guj <input type="text" id="txtguj"/>
+    <br/>
+    hin <input type="text" id="txthin"/>
+    <br/>
+    math <input type="text" id="txtmath"/>
+    <br/>
+    ss <input type="text" id="txtss"/>
+    <br/>
+    Total <input type="text" id="txttotal" />
+    <br/>
+    <input type="button" id="btnresult" value="Result" onclick="hitotal();"/>
+    <br/>
+    p/f <input type="text" id="txtpf"/>
+</body>
+    <script>
+        function hitotal()
+        {
+        let a=parseInt(document.getElementById("txteng").value);
+        let b=parseInt(document.getElementById("txtguj").value);
+        let c=parseInt(document.getElementById("txthin").value);
+        let d=parseInt(document.getElementById("txtmath").value);
+        let e=parseInt(document.getElementById("txtss").value);
+        document.getElementById("txttotal").value=a+b+c+d+e; 
+         let Total=parseInt(document.getElementById("txttotal").value);
+
+            if (Total< 50)
+             
+            {
+                document.getElementById("txtpf").value="fail";
+            } 
+            else 
+            {
+                document.getElementById("txtpf").value="pass";
+            }
+
+        }
+    </script>
+</html>

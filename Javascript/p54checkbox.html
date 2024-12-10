@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="" class="">
+        <input type="checkbox" id="checkbox1" value="pic1">pic1
+        <input type="checkbox" id="checkbox2" value="pic2">pic2
+        <input type="checkbox" id="checkbox3" value="pic3">pic3
+        <input type="checkbox" id="checkbox4" value="pic4">pic4
+        <br/>
+        <img src="img/indgate.jpg" id="img1" height="100" width="100">
+        <img src="img/kutub.jpg" id="img2" height="100" width="100">
+        <img src="img/taj.jpg" id="img3" height="100" width="100">
+        <img src="img/goldentmpl.jpg" id="img4" height="100" width="100">
+    </form>
+    <script>
+        let checkbox1=document.querySelector("#checkbox1");
+        let checkbox2=document.querySelector("#checkbox2");
+        let checkbox3=document.querySelector("#checkbox3");
+        let checkbox4=document.querySelector("#checkbox4");
+        let img1=document.querySelector("#img1");
+        let img2=document.querySelector("#img2");
+        let img3=document.querySelector("#img3");
+        let img4=document.querySelector("#img4");
+
+        checkbox1.addEventListener("click",()=>
+        {
+           if (checkbox1.checked) 
+           {
+            img1.style.visibility = 'visible';
+           }
+            else 
+           {
+            img1.style.visibility = 'hidden';
+           }
+
+        }
+    )
+         checkbox2.addEventListener("click",()=>
+        {
+            if (checkbox2.checked) 
+           {
+            img2.style.visibility = 'visible';
+           }
+            else 
+           {
+            img2.style.visibility = 'hidden';
+           }
+
+        }
+    )
+         checkbox3.addEventListener("click",()=>
+        {
+            if (checkbox3.checked) 
+           {
+            img3.style.visibility = 'visible';
+           }
+            else 
+           {
+            img3.style.visibility = 'hidden';
+           }
+        }
+    )
+        checkbox4.addEventListener("click",()=>
+        {
+            if (checkbox4.checked) 
+           {
+            img4.style.visibility = 'visible';
+           }
+            else 
+           {
+            img4.style.visibility = 'hidden';
+           }
+
+        }
+    )
+
+
+    </script>
+        
+
+    
+</body>
+</html>

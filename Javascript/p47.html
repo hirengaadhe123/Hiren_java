@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form accept="" class="">
+        <img src="img/cardback.jpg" id="img1" height="100" width="100">
+        <img src="img/cardback.jpg" id="img2" height="100" width="100">
+        <img src="img/cardback.jpg" id="img3" height="100" width="100">
+        <img src="img/cardback.jpg" id="img4" height="100" width="100">
+        <img src="img/cardback.jpg" id="img5" height="100" width="100">
+        <br/>
+        <img src="img/cardback.jpg" id="img6" height="100" width="100">
+        <img src="img/cardback.jpg" id="img7" height="100" width="100">
+        <img src="img/cardback.jpg" id="img8" height="100" width="100">
+        <img src="img/cardback.jpg" id="img9" height="100" width="100">
+        <img src="img/cardback.jpg" id="img10" height="100" width="100">
+        <br/>
+        <input type="button" id="btnmatch" value="match">
+        <input type="button" id="btnclose" value="close">
+        <br/>
+        <span id="spanans"></span>
+    </form>
+    <script>
+        let img1=document.querySelector("#img1");
+        let img2=document.querySelector("#img2");
+        let img3=document.querySelector("#img3");
+        let img4=document.querySelector("#img4");
+        let img5=document.querySelector("#img5");
+        let img6=document.querySelector("#img6");
+        let img7=document.querySelector("#img7");
+        let img8=document.querySelector("#img8");
+        let img9=document.querySelector("#img9");
+        let img10=document.querySelector("#img10");
+        let btnmatch=document.querySelector("#btnmatch");
+        let btnclose=document.querySelector("#btnclose");
+        let span=document.querySelector("#spanans");
+
+        img1.addEventListener("click",()=>
+        {
+        img1.src="img/card1.jpg";
+        }
+    )
+        img2.addEventListener("click",()=>
+        {
+        img2.src="img/card2.jpg";
+        }
+    )
+        img3.addEventListener("click",()=>
+        {
+        img3.src="img/card3.jpg";
+        }
+    )
+        img4.addEventListener("click",()=>
+        {
+        img4.src="img/card4.jpg";
+        }
+    )
+        img5.addEventListener("click",()=>
+        {
+        img5.src="img/card5.jpg";
+        }
+    )
+        img6.addEventListener("click",()=>
+        {
+        img6.src="img/card5.jpg";
+        }
+    )
+        img7.addEventListener("click",()=>
+        {
+        img7.src="img/card4.jpg";
+        }
+    )
+        img8.addEventListener("click",()=>
+        {
+        img8.src="img/card3.jpg";
+        }
+    )
+        img9.addEventListener("click",()=>
+        {
+        img9.src="img/card2.jpg";
+        }
+    )
+        img10.addEventListener("click",()=>
+        {
+        img10.src="img/card1.jpg";
+        }
+    )
+
+    btnmatch.addEventListener("click",()=>
+    {
+       if (img1 = img10) 
+       {
+        span.innerHTML="cards are match";
+       }
+        else 
+       {
+        span.innerHTML="cards are not match";        
+       }
+        
+    }
+)
+    btnclose.addEventListener("click",()=>
+    {
+        img1.src="img/cardback.jpg";
+        img2.src="img/cardback.jpg";
+        img3.src="img/cardback.jpg";
+        img4.src="img/cardback.jpg";
+        img5.src="img/cardback.jpg";
+        img6.src="img/cardback.jpg";
+        img7.src="img/cardback.jpg";
+        img8.src="img/cardback.jpg"; 
+        img9.src="img/cardback.jpg";
+        img10.src="img/cardback.jpg";
+    }
+
+
+)
+
+
+    </script>
+    
+</body>
+</html>

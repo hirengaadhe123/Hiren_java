@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="" class="">
+    no1 <input type="text" id="txtno1">
+    <br/>
+    no2 <input type="text" id="txtno2">
+    <br/>
+    <input type="radio" id="radioplus" value="Plus" name="g3"> plus
+    <input type="radio" id="radiominus" value="Minus" name="g3"> minus
+    <input type="radio" id="radiodivide" value="Divide" name="g3"> divide
+    <br/>
+    <br/>
+    <input type="button" id="btncheck" value="check">
+    <span id="spanans"></span>
+    </form>
+    <script>
+        let no1=document.querySelector("#txtno1");
+        let no2=document.querySelector("#txtno2");
+        let radioplus=document.querySelector("#radioplus");
+        let radiominus=document.querySelector("#radiominus");
+        let radiodivide=document.querySelector("#radiodivide");
+        let btncheck=document.querySelector("#btncheck");
+        let span=document.querySelector("#spanans");
+
+        btncheck.addEventListener("click",()=>{
+            if (radioplus.checked==true) 
+            {
+                let no1=parseFloat(txtno1.value);
+                let no2=parseFloat(txtno2.value);
+                span.innerHTML=no1+no2;
+            }
+            else if(radiominus.checked==true)
+            {
+                let no1=parseFloat(txtno1.value);
+                let no2=parseFloat(txtno2.value);
+                span.innerHTML=no1-no2;
+            }
+            else if (radiodivide.checked==true)
+            {
+                let no1=parseFloat(txtno1.value);
+                let no2=parseFloat(txtno2.value);
+                span.innerHTML=no1/no2;
+            }
+
+           
+        }
+    )
+    
+
+
+    </script>
+    
+</body>
+</html>

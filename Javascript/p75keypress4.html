@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="" class="">
+        <input type="text" id="text1">
+        <br/>
+        <span id="spanans"></span>
+    </form>
+    <script>
+        let text=document.querySelector("#text1");
+        let span=document.querySelector("#spanans");
+        let lastchar=document.querySelector("#lastchar");
+
+        text.addEventListener("keyup",()=>
+       {
+            let inputValue=text.value;
+            let lastchar=inputValue.charAt(inputValue.length - 1);
+            if(lastchar!="k")
+            {
+                span.innerHTML+=lastchar;
+            }
+        }
+    
+    )
+
+
+
+
+
+    </script>
+    
+</body>
+</html>

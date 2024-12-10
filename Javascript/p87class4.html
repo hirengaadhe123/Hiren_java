@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class Bank{
+            constructor(acno,acname,acbalance){
+                this.acno=acno;
+                this.acname=acname;
+                this.acbalance=acbalance;
+            }
+            displayinfo(){
+                console.log(`${this.acno} ${this.acname} ${this.acbalance}`);
+            }
+        }
+            b1=new Bank('2041','divyesh','4000');
+            b2=new Bank('2034','keval','3000');
+            b3=new Bank('2037','hardik','5000');
+
+            b1.displayinfo();
+            b2.displayinfo();
+            b3.displayinfo();
+
+
+
+    </script>
+    
+</body>
+</html>

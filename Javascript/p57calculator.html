@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="" class="">
+        <input type="text" id="txt" >
+        <br/>
+        <input type="button" id="btn1" value="9">
+        <input type="button" id="btn2" value="8">
+        <input type="button" id="btn3" value="7">
+        <input type="button" id="btn4" value="+">
+        <br/>
+        <input type="button" id="btn5" value="6">
+        <input type="button" id="btn6" value="5">
+        <input type="button" id="btn7" value="4">
+        <input type="button" id="btn8" value="-">
+        <br/>
+        <input type="button" id="btn9" value="3">
+        <input type="button" id="btn10" value="2">
+        <input type="button" id="btn11" value="1">
+        <input type="button" id="btn12" value="*">
+        <br/>
+        <input type="button" id="btn13" value="0">
+        <input type="button" id="btn14" value="+/-">
+        <input type="button" id="btn15" value="=">
+        <input type="button" id="btn16" value="/">
+    </form>
+    <script>
+        let txt=document.querySelector("#txt");
+        let btn1=document.querySelector("#btn1");
+        let btn2=document.querySelector("#btn2");
+        let btn3=document.querySelector("#btn3");
+        let btn4=document.querySelector("#btn4");
+        let btn5=document.querySelector("#btn5");
+        let btn6=document.querySelector("#btn6");
+        let btn7=document.querySelector("#btn7");
+        let btn8=document.querySelector("#btn8");
+        let btn9=document.querySelector("#btn9");
+        let btn10=document.querySelector("#btn10");
+        let btn11=document.querySelector("#btn11");
+        let btn12=document.querySelector("#btn12");
+        let btn13=document.querySelector("#btn13");
+        let btn14=document.querySelector("#btn14");
+        let btn15=document.querySelector("#btn15");
+        let btn16=document.querySelector("#btn16");
+
+        btn1.addEventListener("click",()=>
+        {
+            txt.value+="9";
+        }
+    )
+        btn2.addEventListener("click",()=>
+        {
+            txt.value+="8";
+        }
+    )
+        btn3.addEventListener("click",()=>
+        {
+            txt.value+="7";
+        }
+    )
+        btn4.addEventListener("click",()=>
+        {
+            txt.value+="+";
+        }
+    )
+        btn5.addEventListener("click",()=>
+        {
+            txt.value+="6";
+        }
+    )
+        btn6.addEventListener("click",()=>
+        {
+            txt.value+="5";
+        }
+    )
+        btn7.addEventListener("click",()=>
+        {
+            txt.value+="4";
+        }
+    )
+        btn8.addEventListener("click",()=>
+        {
+            txt.value+="-";
+        }
+    )
+        btn9.addEventListener("click",()=>
+        {
+            txt.value+="3";
+        }
+    )
+        btn10.addEventListener("click",()=>
+        {
+            txt.value+="2";
+        }
+    )
+        btn11.addEventListener("click",()=>
+        {
+            txt.value+="1";
+        }
+    )
+        btn12.addEventListener("click",()=>
+        {
+            txt.value+="*";
+        }
+    )
+        btn13.addEventListener("click",()=>
+        {
+            txt.value+="0";
+        }
+    )
+        btn14.addEventListener("click",()=>
+        {
+            txt.value=parseInt(txt.value)*-1;
+            
+        }
+    )
+        btn15.addEventListener("click",()=>
+        {
+            txt.value=eval(txt.value);
+        }
+    )
+        btn16.addEventListener("click",()=>
+        {
+            txt.value+="/";
+        }
+    )
+        
+    </script>
+</body>
+</html>

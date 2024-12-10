@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+      eng  <input type="text" id="txteng"/> 
+      <br/>
+      <input type="button" id="btnresult" value="Result" onclick="hiresult();"/>
+      <br/>
+      p/f <input type="text" id="txtpf"/>
+
+    </form>
+    
+</body>
+<script>
+    function hiresult()
+    {
+        let eng=parseInt(document.getElementById("txteng").value);
+        
+        if (eng<18) 
+        {
+            
+            document.getElementById("txtpf").value="fail";
+            
+        } 
+        else 
+        {
+            document.getElementById("txtpf").value="pass";
+        }
+    }
+
+</script>
+</html>

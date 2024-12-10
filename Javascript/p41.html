@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="" class="">
+        <input type="radio" id="radio1" value="radio1" name="g4"> indgate
+        <input type="radio" id="radio2" value="radio2" name="g4"> taj
+        <input type="radio" id="radio3" value="radio3" name="g4"> kutub
+        <img src="" id="img1" height="100" width="100"/>
+        
+    </form>
+    <script>
+        let radio1=document.querySelector("#radio1");
+        let radio2=document.querySelector("#radio2");
+        let radio3=document.querySelector("#radio3");
+        let img1=document.querySelector("#img1");
+        let img2=document.querySelector("#img2");
+        let img3=document.querySelector("#img3");
+
+        radio1.addEventListener("click",()=>
+        {
+            img1.src="img/indgate.jpg";
+        }
+    )
+        radio2.addEventListener("click",()=>
+       {
+            img1.src="img/taj.jpg";
+       }
+    )
+        radio3.addEventListener("click",()=>
+       {
+            img1.src="img/kutub.jpg";
+       }
+    )
+    </script>
+    
+</body>
+</html>
