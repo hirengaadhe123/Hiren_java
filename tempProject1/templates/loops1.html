@@ -1,0 +1,17 @@
+<html>
+    <head>
+         <title> Numbers </title>
+    </head>
+<body>
+    <h3>Numbers</h3>
+    <hr>
+         {%for x in ListofNumbers%} 
+             {% if x|divisibleby:2 %}
+                 <p>{{x}} is even </p>
+                {%else%}
+                 <p>{{x}} is odd </p>
+        {% endif %}
+
+        {%endfor%}
+</body>
+</html>

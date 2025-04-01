@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <title>About Us</title>
+    </head>
+    <body>
+        <h1>About Page</h1>
+        <hr>
+        <p>
+            About us details
+        </p>
+        {%for x in ListofFriends%}
+        <div>{{forloop.counter}} {{x}}</div>
+        {% endfor %}
+
+        <br>
+        <table border="2">
+            {%for x in empList%}
+            <tr>
+                <td>{{x.name}}</td>
+                <td>{{x.phone}}</td>
+            </tr>
+            {%endfor%}
+        </table>
+    </body>
+</html>

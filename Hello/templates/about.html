@@ -1,0 +1,162 @@
+{% extends "base.html" %}
+{% block title %}
+About Us
+{% endblock title %}
+{% load static %} 
+
+{% block body %}
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+<style>
+    /* Background Image */
+    body {
+        background: url("{% static 'img/icecreambg1.jpg' %}") no-repeat center center;
+        background-size: cover;
+        background-attachment: fixed;
+    }
+
+    /* Content Styling */
+    .about-container {
+        width: 100%;
+        padding: 50px 10%;
+        background: rgba(255, 255, 255, 0.9); /* Light overlay for readability */
+        border-radius: 10px;
+        box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    h1 {
+        color: #000;
+        font-weight: bold;
+        text-align: center;
+        font-size: 36px;
+        margin-bottom: 30px;
+    }
+
+    h3 {
+        color: #000;
+        font-weight: normal;
+        font-size: 24px;
+        margin-top: 40px;
+        position: relative;
+    }
+
+    h3::before {
+        content: "•";  /* Black dot before heading */
+        font-size: 28px;
+        color: #000;
+        margin-right: 10px;
+    }
+
+    p {
+        font-size: 20px;
+        color: #333;
+        text-align: justify;
+        margin-bottom: 20px;
+    }
+
+    .contact-info a {
+        color: #007bff;
+        text-decoration: none;
+    }
+
+    .contact-info a:hover {
+        text-decoration: underline;
+    }
+
+    /* Line Separator Between Sections */
+    hr {
+        border: none;
+        height: 2px;
+        background: #ddd;
+        margin: 40px 0;
+    }
+
+    /* Stay Up to Date Section */
+    .social-section {
+        text-align: center;
+        margin-top: 50px;
+    }
+
+    .social-section h3 {
+        font-size: 24px;
+        font-weight: normal;
+        margin-bottom: 15px;
+    }
+
+    /* Social Media Icons */
+    .social-media a {
+        color: #000;
+        font-size: 26px;
+        margin: 0 15px;
+        text-decoration: none;
+        transition: color 0.3s;
+    }
+
+    .social-media a:hover {
+        color: #007bff;
+    }
+</style>
+
+<div class="about-container">
+    <h1>About Us</h1>
+    <p>
+        Welcome to RM Ice Creams, your go-to destination for delicious, handcrafted ice creams made from the finest ingredients. 
+        We take pride in offering a variety of flavors that bring joy with every scoop.
+    </p>
+
+    <hr>
+
+    <h3>Our Mission</h3>
+    <p>Our goal is to spread happiness through high-quality, flavorful ice creams. We use natural ingredients, ensuring freshness, and crafting every batch with love.</p>
+
+    <hr>
+
+    <h3>Our Location</h3>
+    <p>
+        RM Ice Creams<br>
+        123, Sweet Treats Street,<br>
+        Ice Cream City, IC 56789
+    </p>
+
+    <hr>
+
+    <h3>Contact</h3>
+    <p class="contact-info">
+        Phone: <a href="tel:+1234567890">+1 234 567 890</a><br>
+        Email: <a href="mailto:info@rmicecreams.com">info@rmicecreams.com</a><br>
+        Website: <a href="https://www.rmicecreams.com">www.rmicecreams.com</a>
+    </p>
+
+    <hr>
+
+    <h3>Our Policy</h3>
+    <p>
+        We prioritize customer satisfaction, hygiene, and quality. Our ice creams are made using fresh dairy and natural flavors. 
+        If you have any concerns about allergies, please check our ingredients list before purchasing.
+    </p>
+
+    <hr>
+
+    <h3>License & Certifications</h3>
+    <p>
+        RM Ice Creams is a licensed food business, adhering to all health and safety regulations. 
+        Our production facility is certified for quality control and hygiene standards.
+    </p>
+
+    <hr>
+
+    <!-- Stay Up to Date Section with Centered Social Media Icons -->
+    <div class="social-section">
+        <h3>Stay Up to Date</h3>
+        <div class="social-media">
+            <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="https://youtube.com" target="_blank"><i class="fab fa-youtube"></i></a>
+        </div>
+    </div>
+</div>
+
+
+
+{% endblock body  %}
